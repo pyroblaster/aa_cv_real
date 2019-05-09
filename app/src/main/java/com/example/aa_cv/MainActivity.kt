@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-    fun openURL(address:String){
+    private fun openURL(address:String){
         val openURL = Intent(Intent.ACTION_VIEW)
         openURL.data = Uri.parse(address)
         startActivity(openURL)
