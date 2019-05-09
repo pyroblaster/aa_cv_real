@@ -5,15 +5,202 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/colorBackground"
         tools:context=".MainActivity">
+    <ImageView android:layout_width="293dp"
+               android:layout_height="112dp"
+               app:layout_constraintBottom_toTopOf="@id/userNameText"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintRight_toRightOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               android:src="@drawable/logo_tesla"
+                />
+
 
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
+            android:textColor="@color/colorText"
+            android:text="@string/userName"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintVertical_bias="0.35"
+
+            android:id="@+id/userNameText"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:text="@string/userNameAnswer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/userNameText"
+            android:id="@+id/userNameAnswerText"
+            android:layout_marginStart="10dp"
+            app:layout_constraintVertical_bias="0.351"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:text="@string/userSurname"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintVertical_bias="0.075"
+            app:layout_constraintTop_toBottomOf="@+id/userNameText"
+            android:id="@+id/userSurnameText"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:text="@string/userSurnameAnswer"
+            app:layout_constraintBottom_toTopOf="@id/userBirthDateText"
+            app:layout_constraintTop_toBottomOf="@id/userNameAnswerText"
+            app:layout_constraintStart_toEndOf="@+id/userSurnameText"
+            android:layout_marginTop="4dp"
+            android:id="@+id/userSurnameAnswerText"
+            android:layout_marginStart="10dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:text="@string/userBirthDate"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintVertical_bias="0.075"
+            app:layout_constraintTop_toBottomOf="@+id/userSurnameText"
+            android:id="@+id/userBirthDateText"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:text="@string/userBirthDateAnswer"
+            app:layout_constraintBottom_toTopOf="@id/userEducationText"
+            app:layout_constraintTop_toBottomOf="@id/userSurnameAnswerText"
+            app:layout_constraintStart_toEndOf="@+id/userBirthDateText"
+            android:id="@+id/userBirthDateAnswerText"
+            android:layout_marginStart="10dp"
+            app:layout_constraintVertical_bias="0.537"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:text="@string/userEducation"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintVertical_bias="0.075"
+            app:layout_constraintTop_toBottomOf="@+id/userBirthDateText"
+            android:id="@+id/userEducationText"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:text="@string/userEducationAnswer"
+            app:layout_constraintBottom_toTopOf="@id/userBirthDateAnswerText"
+            app:layout_constraintTop_toBottomOf="@id/userProfessionText"
+            app:layout_constraintStart_toEndOf="@+id/userEducationText"
+            android:id="@+id/userEducationAnswerText"
+            android:layout_marginStart="10dp"
+            app:layout_constraintVertical_bias="0.481"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:text="@string/userProfession"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintVertical_bias="0.075"
+            app:layout_constraintTop_toBottomOf="@+id/userEducationText"
+            android:id="@+id/userProfessionText"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:text="@string/userProfessionAnswer"
+            app:layout_constraintBottom_toTopOf="@id/userDescText"
+            app:layout_constraintTop_toBottomOf="@id/userEducationAnswerText"
+            app:layout_constraintStart_toEndOf="@+id/userProfessionText"
+            android:id="@+id/userProfessionTextAnswerText"
+            android:layout_marginStart="10dp"
+            app:layout_constraintVertical_bias="0.528"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:text="@string/userDesc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintVertical_bias="0.075"
+            app:layout_constraintTop_toBottomOf="@+id/userProfessionText"
+            android:id="@+id/userDescText"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:text="@string/userDescAnswer"
+            app:layout_constraintTop_toBottomOf="@id/userProfessionTextAnswerText"
+            app:layout_constraintStart_toEndOf="@+id/userDescText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/userDescAnswerText"
+            android:layout_marginStart="10dp"
+            app:layout_constraintVertical_bias="0.077"/>
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/userTwitter"
+            android:textColor="@color/colorText"
+            android:background="@color/colorBackground"
+            app:layout_constraintTop_toBottomOf="@id/userDescAnswerText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/userTwitterButton"
+            android:layout_marginStart="36dp"/>
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/userTesla"
+            android:textColor="@color/colorText"
+            android:background="@color/colorBackground"
+            app:layout_constraintTop_toBottomOf="@id/userDescAnswerText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/userTwitterButton"
+            app:layout_constraintEnd_toStartOf="@id/userWikiButton"
+            android:id="@+id/userTeslaButton"/>
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/userWiki"
+            android:textColor="@color/colorText"
+            android:background="@color/colorBackground"
+            app:layout_constraintTop_toBottomOf="@id/userDescAnswerText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/userTeslaButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/userWikiButton"
+            android:layout_marginEnd="36dp"/>
 
 </android.support.constraint.ConstraintLayout>

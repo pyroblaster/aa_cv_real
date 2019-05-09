@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">aa_cv</string>
+    <string name="userName">Name: </string>
+    <string name="userSurname">Surname: </string>
+    <string name="userBirthDate">Birth date: </string>
+    <string name="userEducation">Education: </string>
+    <string name="userProfession">Profession: </string>
+    <string name="userDesc">Description: </string>
+    <string name="userNameAnswer">Elon</string>
+    <string name="userSurnameAnswer">Musk</string>
+    <string name="userBirthDateAnswer">28.7.1971.</string>
+    <string name="userEducationAnswer">B.Sc Physics and Economy</string>
+    <string name="userProfessionAnswer">God-Emperor</string>
+    <string name="userDescAnswer">Greatest being Universe even knew about.</string>
+    <string name="userTwitter">Twitter</string>
+    <string name="userTesla">Tesla</string>
+    <string name="userWiki">Wikipedia</string>
 </resources>
