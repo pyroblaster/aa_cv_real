@@ -118,6 +118,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/colorText"
             android:text="@string/userProfessionAnswer"
+            android:textStyle="bold"
             android:layout_marginStart="12sp"
             app:layout_constraintBottom_toTopOf="@id/userDescAnswerText"
             app:layout_constraintStart_toEndOf="@+id/userProfessionText"
