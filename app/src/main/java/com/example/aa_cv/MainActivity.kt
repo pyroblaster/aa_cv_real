@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import android.widget.Button
 import android.net.Uri
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,24 +14,23 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val twitterButton = findViewById(R.id.userTwitterButton) as Button
-        val twitterURL = "https://twitter.com/elonmusk"
-        twitterButton.setOnClickListener {
+        val twitterURL = "https://www.twitter.com/antebartulovic"
+        userTwitterButton.setOnClickListener {
+            openURL(twitterURL)
+            Toast.makeText(this@MainActivity, "Check this out!", Toast.LENGTH_SHORT).show()
             openURL(twitterURL)
         }
 
-        val teslaButton = findViewById(R.id.userTeslaButton) as Button
-        val teslaURL = "https://www.tesla.com/"
-        teslaButton.setOnClickListener {
-            Toast.makeText(this@MainActivity, "Lead me to Tesla.", Toast.LENGTH_SHORT).show()
-            openURL(teslaURL)
+        val userRedditURL = "https://www.reddit.com/"
+        userRedditButton.setOnClickListener {
+            Toast.makeText(this@MainActivity, "Fly me to the moon!", Toast.LENGTH_SHORT).show()
+            openURL(userRedditURL)
         }
 
-        val wikiButton = findViewById(R.id.userWikiButton) as Button
-        val wikiURL = "https://en.wikipedia.org/wiki/Elon_Musk"
-        wikiButton.setOnClickListener {
-            Toast.makeText(this@MainActivity, "Lead me to Wiki.", Toast.LENGTH_SHORT).show()
-            openURL(wikiURL)
+        val userWebURL = "https://pandareptil.com/"
+        userWebButton.setOnClickListener {
+            Toast.makeText(this@MainActivity, "Lets go!", Toast.LENGTH_SHORT).show()
+            openURL(userWebURL)
         }
 
     }

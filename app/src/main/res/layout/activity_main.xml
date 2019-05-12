@@ -10,13 +10,14 @@
         android:background="@color/colorBackground"
         tools:context=".MainActivity">
 
-    <ImageView android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
+    <ImageView android:layout_width="150dp"
+               android:layout_height="150dp"
+
                app:layout_constraintBottom_toTopOf="@id/userNameText"
                app:layout_constraintLeft_toLeftOf="parent"
                app:layout_constraintRight_toRightOf="parent"
                app:layout_constraintTop_toTopOf="parent"
-               android:src="@mipmap/logo_tesla"
+               android:src="@drawable/userimg"
                android:id="@+id/imageView"/>
 
     <TextView
@@ -108,7 +109,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/colorText"
             android:text="@string/userProfession"
-            app:layout_constraintBottom_toTopOf="@id/userDescText"
+            app:layout_constraintBottom_toTopOf="@id/userSkillsText"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/userEducationText"
             android:id="@+id/userProfessionText"/>
@@ -120,7 +121,7 @@
             android:text="@string/userProfessionAnswer"
             android:textStyle="bold"
             android:layout_marginStart="12sp"
-            app:layout_constraintBottom_toTopOf="@id/userDescAnswerText"
+            app:layout_constraintBottom_toTopOf="@id/userSkillsText"
             app:layout_constraintStart_toEndOf="@+id/userProfessionText"
             app:layout_constraintTop_toBottomOf="@+id/userEducationAnswerText"
             android:id="@+id/userProfessionAnswerText"/>
@@ -129,29 +130,32 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/colorText"
-            android:text="@string/userDesc"
+            android:text="@string/userSkills"
             app:layout_constraintBottom_toTopOf="@id/userTwitterButton"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/userProfessionText"
-            android:id="@+id/userDescText"/>
+            android:id="@+id/userSkillsText"/>
 
     <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textColor="@color/colorText"
-            android:text="@string/userDescAnswer"
-            android:layout_marginStart="12sp"
+            android:text="@string/userSkillsAnswer"
             app:layout_constraintBottom_toTopOf="@id/userTwitterButton"
-            app:layout_constraintStart_toEndOf="@+id/userDescText"
             app:layout_constraintTop_toBottomOf="@+id/userProfessionAnswerText"
-            android:id="@+id/userDescAnswerText"/>
+            android:id="@+id/userSkillsAnswerText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/userSkillsText"
+            android:layout_marginStart="8dp"
+            />
+
 
     <Button android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/userTwitter"
             android:textColor="@color/colorText"
             android:background="@color/colorBackground"
-            app:layout_constraintTop_toBottomOf="@id/userDescAnswerText"
+            app:layout_constraintTop_toBottomOf="@id/userSkillsAnswerText"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:id="@+id/userTwitterButton"
@@ -159,27 +163,25 @@
 
     <Button android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/userTesla"
+            android:text="@string/userReddit"
             android:textColor="@color/colorText"
-            android:fontFamily="@font/tesla"
             android:background="@color/colorBackground"
-            app:layout_constraintTop_toBottomOf="@id/userDescAnswerText"
+            app:layout_constraintTop_toBottomOf="@id/userSkillsAnswerText"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@id/userTwitterButton"
-            app:layout_constraintEnd_toStartOf="@id/userWikiButton"
-            android:id="@+id/userTeslaButton"/>
+            app:layout_constraintEnd_toStartOf="@id/userWebButton"
+            android:id="@+id/userRedditButton"/>
 
     <Button android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/userWiki"
+            android:text="@string/userWebSite"
             android:textColor="@color/colorText"
-
             android:background="@color/colorBackground"
-            app:layout_constraintTop_toBottomOf="@id/userDescAnswerText"
+            app:layout_constraintTop_toBottomOf="@id/userSkillsAnswerText"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/userTeslaButton"
+            app:layout_constraintStart_toEndOf="@id/userRedditButton"
             app:layout_constraintEnd_toEndOf="parent"
-            android:id="@+id/userWikiButton"
+            android:id="@+id/userWebButton"
   />
 
 </android.support.constraint.ConstraintLayout>

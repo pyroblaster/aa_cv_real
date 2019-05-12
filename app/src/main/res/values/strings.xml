@@ -5,14 +5,17 @@
     <string name="userBirthDate">Birth date: </string>
     <string name="userEducation">Education: </string>
     <string name="userProfession">Profession: </string>
-    <string name="userDesc">Description: </string>
-    <string name="userNameAnswer">Elon</string>
-    <string name="userSurnameAnswer">Musk</string>
-    <string name="userBirthDateAnswer">28.6.1971.</string>
-    <string name="userEducationAnswer">B.Sc Physics and Economy</string>
-    <string name="userProfessionAnswer">God-Emperor</string>
-    <string name="userDescAnswer">CEO</string>
+    <string name="userSkills">Skills: </string>
+    <string name="userNameAnswer">Ante</string>
+    <string name="userSurnameAnswer">Bartulović</string>
+    <string name="userBirthDateAnswer">29.12.1994.</string>
+    <string name="userEducationAnswer">B.Sc Computer Engineering, FERIT Osijek.</string>
+    <string name="userProfessionAnswer">Full time student</string>
+    <string name="userSkillsAnswer">C, C++, C--, C*, C#, F#, Java, Kotlin, Basic, Bash, Ada, Elixir, Go, Microsoft Office, Bench Press, Squats, Deadlifts.</string>
     <string name="userTwitter">Twitter</string>
-    <string name="userTesla">Tesla</string>
-    <string name="userWiki">Wikipedia</string>
+    <string name="userReddit">Reddit</string>
+    <string name="userWebSite">Web</string>
+    <string name="webSite">http://pandareptil.com/</string>
+    <string name="reddit">https://www.reddit.com/</string>
+    <string name="twitter">https://twitter.com/antebartulovic</string>
 </resources>
